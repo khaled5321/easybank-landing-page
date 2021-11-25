@@ -1,0 +1,28 @@
+header{
+    background-color: $White;
+    max-width: 1440px;
+    
+    nav{
+        display: flex;
+        flex-direction: row;
+        // justify-content:space-between;
+        padding:1.0rem 1.5625rem;
+        }
+        .logo{
+            width:9.375rem;
+            height:1.875rem;
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+        .navlinks{
+            >a{
+                text-decoration: none;
+                color:$grayish-Blue;
+
+            }
+            
+        }
+    }
+
