@@ -1,24 +1,61 @@
+//padding
+.padding{
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+}
+//flexbox
+.flex{
+    display:flex;
+    flex-wrap: nowrap;
+    
+    &-row{
+        @extend .flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    &-col{
+        @extend .flex;
+        flex-direction: column;
+    }
+
+    
+}
 //buttons
 .btn{
-    text-decoration: none;
     font-weight: 700;
     text-align: center;
-    min-width: fit-content;
     color: $light-Grayish-Blue;
     background:linear-gradient(to right,$lime-green ,$bright-Cyan 90%);
     border-radius: 40px;
     padding: .6875rem 1.25rem;
+    overflow: hidden;
+    transition: opacity 100ms ease-in-out;
+    &:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
 }
-.btn:hover{
-    opacity: 0.5;
-    cursor: pointer;
+
+.no-scroll{
+    overflow: hidden;
+    
+}
+.fade{
+    visibility: hidden;
 }
 
 //hide for mobile
 .hide-mobile{
-    @media (max-width:670px) {
-        display: none;
+    @media only screen and(max-width:900px) {
+        display: none !important;
         
+    }
+    
+}
+//hide for desktop
+.hide-desktop{
+    @media only screen and (min-width:900px) {
+        display: none !important;
     }
     
 }

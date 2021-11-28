@@ -8,4 +8,14 @@ html{
     font-family: 'Public Sans', sans-serif;
     font-size: 1.125rem;
     line-height: 1.3;
+    overflow-x: hidden;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+
+a,a:hover,a:visited{
+    text-decoration: none;
 }

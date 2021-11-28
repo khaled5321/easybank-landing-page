@@ -18,13 +18,20 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav>
+  <div id="overlay" class="overlay fade"></div>
+  <header class="padding">
+    
+    <nav class="flex-row">
       <a href="/" class="logo">
-        <img src="images/logo.svg" alt="Easybank">
+        <img src="./images/logo.svg" alt="Easybank">
+      </a>
+      <a href="#" id="ham-menu" class="ham-menu hide-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
       </a>
       <div class="navlinks hide-mobile">
-        <a href="#">Home</a>
+        <a href="/">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">Blog</a>
@@ -32,12 +39,34 @@
       </div>
       <a href="#" class="btn hide-mobile">Request Invite</a>
     </nav>
+    <div id="menu" class="mobile-menu hide-desktop fade">
+      <a href="/">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+    
   </header>
-
- 
-
-
-
+  <main>
+    <section class="hero">
+      <Div class="hero-image"></Div>
+      <div class="hero-intro padding">
+        <h1>
+          Next generation<br/> digital banking
+        </h1>
+        <p>
+          Take your financial life online. Your Easybank account
+          will be a one-stop-shop for spending, saving, budgeting, investing
+          and much more.
+        </p>
+        <a href="#" class="btn">Request Invite</a>
+      </div>
+    </section>
+    <section class="feature">
+      
+    </section>
+  </main>
 
 
 
