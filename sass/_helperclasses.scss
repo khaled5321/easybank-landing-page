@@ -2,6 +2,10 @@
 .padding{
     padding-right: 1.3rem;
     padding-left: 1.3rem;
+    @media (min-width:64em){
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
 }
 //flexbox
 .flex{
@@ -46,7 +50,7 @@
 
 //hide for mobile
 .hide-mobile{
-    @media only screen and(max-width:900px) {
+    @media (max-width:63.99em) {
         display: none !important;
         
     }
@@ -54,7 +58,7 @@
 }
 //hide for desktop
 .hide-desktop{
-    @media only screen and (min-width:900px) {
+    @media (min-width:64em) {
         display: none !important;
     }
     

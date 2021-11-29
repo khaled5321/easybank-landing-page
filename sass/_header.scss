@@ -50,7 +50,7 @@ header{
                     height: .3125rem;
                     left:0px;
                     right:0px;
-                    bottom: -30px;
+                    bottom: -1.75rem;
                     opacity: 0;
                     transition: opacity 200ms ease-in-out;
                 }
@@ -97,6 +97,10 @@ header{
                 color: $dark-blue;
                 text-align: center;
                 padding: .85rem;
+                
+            }
+            a:last-child{
+                margin-bottom: .3125rem;
             }
         }
         
