@@ -1,0 +1,79 @@
+.feature{
+    background-color: $light-Grayish-Blue;
+    //config
+    h1,h2{
+        text-align: center;
+        color:$dark-blue;
+        font-weight: 400;
+        margin-bottom: 1.5625rem;
+    }
+    h1{
+        max-width: 50%;
+        margin-right:auto;
+        margin-left: auto;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    p{
+        text-align: center;
+        font-size: 1rem;
+        color:$grayish-Blue;
+        margin-bottom: 1.875rem;
+    }
+
+
+    //main body
+    .container{
+       .title{
+           padding-top:4rem;
+           padding-bottom:1rem;
+       }
+       img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1.25rem;
+            margin-bottom:1.25rem;
+            width: 4.625rem;
+            height:4.625rem ;
+       }
+       .open-api{
+           padding-bottom: 3.75rem;
+       }
+    }
+    @include breakpoints(desktop){
+        h1,h2,p{
+            text-align: left;
+            max-width: 100%;
+        }   
+        .container{
+            p{
+                font-size: .875rem;
+            }
+            .title{
+                max-width: 56%;
+                p{
+                    font-size: 1.125rem;
+                }
+            }
+            
+            .features{
+                display: grid;
+                gap: 1.3rem;
+                grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+                padding-bottom: 3.75rem;
+                img{
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+                .open-api{
+                    padding-bottom:0;
+                   
+                }
+            }
+        }
+    }   
+    
+    
+}

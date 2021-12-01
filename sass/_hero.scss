@@ -1,40 +1,120 @@
 .hero{
     @extend .flex-col;
     background-color: $very-Light-Gray;
+    position: relative;
+    .container{
+        @extend .flex-col;
+        position: relative;
+    }
+
     @include breakpoints(desktop){
             flex-direction: row;
             justify-content: start;
+            .container{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+            }
     }
     .hero-image{
         position: relative;
+        height: 17.5rem;
+        &::before{
+        content: "";
+        position: absolute;
         background-image: url(../images/bg-intro-mobile.svg);
-        background-size: cover;
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 17.5rem;
+        height: 100%;
+        left: -9%;
+        width: 150%;
+        
+        }
+
         &::after{
             content: "";
             position: absolute;
             background-image: url(../images/image-mockups.png);
+            background-size: 100%;
             background-repeat: no-repeat;
-            background-size: 86%;
-            background-position:center bottom;
+            background-position: center bottom;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: 155%;
+            top: -48%;
+            max-width: 360px;
+            right: 50%;
+            transform: translateX(50%);
+
         }
 
-        @include breakpoints(mobile){
-            &::after{
-                background-size: 70% 140%;
-            }
-        }
+        // @include breakpoints(mobile){
+        //     &::after{
+        //         background-size: 70% 140%;
+        //     }
+        // }
+
+        
         //desktop hero
         @include breakpoints(desktop){
             order:2;
-            flex-basis: 50%;
-            height: 41.5rem;
-            background-image: url(../images/bg-intro-desktop.svg);
+            flex: 3;
+            height: 41rem;
+            position: relative;
+            &::before{
+                content:"";
+                position: absolute;
+                background: url(../images/bg-intro-desktop.svg);
+                background-repeat: no-repeat;
+                background-size:auto;
+                background-position-x:left;
+                background-position-y:-17rem;
+                width: 150%;
+                height: 100%;
+            }
+            
+            
+            &::after{
+                
+                position: absolute;
+                background-size: 100%;
+                background-position: center center;
+                width: 120%;
+                height: 133%;
+                top: -17%;
+                max-width: 500%;
+                right: -55%;
+                transform: translateX(0);
+            }
+            
+        }
+        //1024px -1200px
+        @media (min-width:64em)and (max-width:81.2em){
+            order:2;
+            flex: 3;
+            height: 41rem;
+            &::before{
+                content:"";
+                position: absolute;
+                background: url(../images/bg-intro-desktop.svg);
+                background-repeat: no-repeat;
+                background-size:auto;
+                background-position-x:left;
+                background-position-y:-17rem;
+                width: 150%;
+                height: 100%;
+            }
+            &::after{
+                position: absolute;
+                background-size: 96%;
+                background-position: center center;
+                width: 120%;
+                height: 133%;
+                top: -16%;
+                max-width: 500%;
+                right: -28%;
+                transform: translateX(0);
+                }
             
         }
     }
@@ -43,18 +123,14 @@
         margin-top: 1.25rem;
         h1{
             text-align: center;
-            font-size: 1.5rem;
-            color: $dark-blue;
             margin-bottom: 1.5625rem;
-            font-weight: 500;
+            font-weight: 700;
 
         }
         p{
-            font-size: .875rem;
-            font-weight: 300;
-            color: $grayish-Blue;
+            font-size: 1rem;
             text-align: center;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
         }
         @include breakpoints(tablet){
             h1{
@@ -70,19 +146,21 @@
 
         @include breakpoints(desktop){
             order:1;
-            flex-basis: 50%;
+            flex:2;
+            padding-right: 0px;
             h1{
                 text-align: left;
                 font-size: 2.5rem;
-                margin-top: 6.25rem;
+                margin-top: 7.5rem;
             }
             p{
                 text-align: left;
-                font-size: 1.5rem;
+                font-size: 1.25rem;
             }
             .cta-desktop{
                 display: inline-block;
-                margin-bottom: 10rem;
+                
+                margin-bottom: 6rem;
             }
         }
         

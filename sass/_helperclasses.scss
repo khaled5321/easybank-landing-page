@@ -1,12 +1,15 @@
-//padding
-.padding{
-    padding-right: 1.3rem;
-    padding-left: 1.3rem;
-    @media (min-width:64em){
-        padding-right: 6rem;
-        padding-left: 6rem;
-    }
+//container
+.container{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: 64rem;
+    margin: auto;
+    // @media (min-width:64em){
+    //     padding-right: 6rem;
+    //     padding-left: 6rem;
+    // }
 }
+
 //flexbox
 .flex{
     display:flex;
@@ -47,6 +50,34 @@
 .fade{
     visibility: hidden;
 }
+
+//card
+.card {
+    display: flex;
+    flex-direction: column;
+    background: $White;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 25rem;
+    width: 100%;
+    border-radius: 2%;
+    transition: all 500ms;
+    overflow: hidden;
+    margin:1.5rem 0;
+ }
+  
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.05);
+ }
+
+
+//padding
+.pd-rl{
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+}
+
+
 
 //hide for mobile
 .hide-mobile{

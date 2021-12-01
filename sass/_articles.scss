@@ -1,0 +1,62 @@
+.articles{
+    background-color: $very-Light-Gray;
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+    .container{
+        h1{
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .card{
+            max-width: 40rem;
+            margin-right: auto;
+            margin-left: auto;
+            img{
+                height: 60%;
+            }
+            address{
+                color: $grayish-Blue;
+                a{
+                    color: $grayish-Blue;
+                }
+                
+                font-size: .75rem;
+                font-style: normal;
+                margin-top: 1.625rem;
+                margin-bottom: .875rem;
+            }
+            h2{
+                font-size: 1rem;
+                font-weight: 300;
+                color: $dark-blue;
+                margin-bottom: .875rem;
+                transition: all 100ms ease-in-out;
+            }
+            h2:hover{
+                color:$lime-green;
+            }
+            p{
+                padding-bottom: 2.5rem;
+            }
+        }
+    }
+
+    @include breakpoints(desktop){
+        .container{
+            h1{
+                text-align: left;
+                font-size: 2.25rem;
+            }
+            .items{
+                display: grid;
+                gap: 1.5rem;
+                grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+                
+            }
+            
+        }
+    }
+
+
+}

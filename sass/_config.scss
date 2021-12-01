@@ -13,6 +13,16 @@ html{
 }
 body{
     height: 100%;
+    overflow-x:hidden;
+}
+h1{
+    font-size:1.75rem;
+    color: $dark-blue;
+}
+p{
+    font-size: .875rem;
+    font-weight: 300;
+    color: $grayish-Blue;
 }
 
 

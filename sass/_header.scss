@@ -109,7 +109,8 @@ header{
 }
 
 .overlay{
-    display: overlay;
+    display: block;
+    z-index: 1;
     position:fixed;
     opacity: 0;
     top: 0px;
