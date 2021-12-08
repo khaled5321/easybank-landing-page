@@ -103,6 +103,9 @@
     }
     .copyright{
         margin:0;
+        a{
+            margin:0;
+        }
         small{
             margin: 1.5625rem;
             color: $grayish-Blue;
@@ -121,6 +124,9 @@
             }
             .copyright{
                 margin-left: 10%;
+                a{
+                    margin-left: 25%;
+                }
             }
         }
         

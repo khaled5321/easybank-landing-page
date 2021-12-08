@@ -845,6 +845,10 @@ header .mobile-menu a:last-child {
   margin: 0;
 }
 
+.footer .copyright a {
+  margin: 0;
+}
+
 .footer .copyright small {
   margin: 1.5625rem;
   color: #9698a6;
@@ -871,5 +875,8 @@ header .mobile-menu a:last-child {
   }
   .footer .container .copyright {
     margin-left: 10%;
+  }
+  .footer .container .copyright a {
+    margin-left: 25%;
   }
 }
