@@ -1,0 +1,130 @@
+.footer{
+    background-color: $dark-blue;
+    
+    padding-bottom: 3.5rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:2rem 1.5rem;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+
+        img{
+            padding-bottom: 2rem;
+            display: block;
+            margin: 0 auto;
+            
+            filter: invert(100%) sepia(50%) saturate(617%) hue-rotate(182deg) brightness(115%) contrast(200%);
+        }
+        
+    }
+    .social-media{
+
+        >a{
+            transition: all 200ms ease-in-out;
+            margin-bottom:2rem;
+            margin-right:0.375rem;
+            margin-left: 0.375rem;
+            display: inline-block;
+            mask-size: cover;
+            width: 20px;
+            height: 20px;
+            background: white;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        //social media
+        .face-icon{
+            mask:url("../images/icon-facebook.svg");
+        }
+       
+        .face:hover{ 
+            background:#1877f2;
+        }
+        /////
+
+        .youtube-icon{
+            mask:url("../images/icon-youtube.svg");
+        }
+        .youtube:hover{
+            background: #ff0000;
+
+        }
+        /////
+
+        .twitter-icon{
+            mask:url("../images/icon-twitter.svg");
+            mask-repeat: no-repeat;
+        }
+        .twitter:hover{
+            background: #1da1f2;
+
+        }
+        /////
+
+        .pin-icon{
+            mask:url("../images/icon-pinterest.svg");
+
+        }
+        .pin:hover{
+                background-color: #bd081c;
+        }
+        /////
+
+        .insta-icon{
+            mask:url("../images/icon-instagram.svg");
+
+        }
+        .instagram:hover{
+            background-color: #c32aa3;
+        }
+        
+
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1.5rem;
+        margin-bottom:1.5rem;
+        a{
+            color: $very-Light-Gray;
+            transition: all 200ms ease-in-out;
+        }
+        a:hover{
+            color: $lime-green;
+        }
+    }
+    .copyright{
+        margin:0;
+        small{
+            margin: 1.5625rem;
+            color: $grayish-Blue;
+        }
+    }
+    
+
+    @include breakpoints(desktop){
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 3rem 1.5rem;
+            .links{
+                align-items: flex-start;
+            }
+            .copyright{
+                margin-left: 10%;
+            }
+        }
+        
+
+    }
+
+}

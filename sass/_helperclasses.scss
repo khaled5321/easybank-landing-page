@@ -4,10 +4,6 @@
     padding-left: 1.5rem;
     max-width: 64rem;
     margin: auto;
-    // @media (min-width:64em){
-    //     padding-right: 6rem;
-    //     padding-left: 6rem;
-    // }
 }
 
 //flexbox
@@ -23,7 +19,14 @@
     &-col{
         @extend .flex;
         flex-direction: column;
+        
     }
+    &-col-al{
+        @extend .flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
 
     
 }
@@ -57,7 +60,7 @@
     flex-direction: column;
     background: $White;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-    height: 25rem;
+    // height: 25rem;
     width: 100%;
     border-radius: 2%;
     transition: all 500ms;
@@ -76,9 +79,10 @@
     padding-right: 1.875rem;
     padding-left: 1.875rem;
 }
+/////////////
 
 
-
+////////////
 //hide for mobile
 .hide-mobile{
     @media (max-width:63.99em) {

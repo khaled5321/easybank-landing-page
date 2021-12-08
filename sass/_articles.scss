@@ -9,11 +9,13 @@
             margin-bottom: 2.5rem;
         }
         .card{
-            max-width: 40rem;
+            max-width: 35rem;
             margin-right: auto;
             margin-left: auto;
+            
             img{
-                height: 60%;
+                height: 12.5rem;
+                max-height: 12.5rem;
             }
             address{
                 color: $grayish-Blue;
@@ -42,6 +44,20 @@
         }
     }
 
+    @include breakpoints(tablet){
+        .container{
+            h1{
+                font-size: 2.25rem;
+            }
+            .items{
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(19.5rem, 1fr));
+                
+            }
+            
+        }
+    }
     @include breakpoints(desktop){
         .container{
             h1{
