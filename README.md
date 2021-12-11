@@ -26,9 +26,9 @@ Users should be able to:
 
 ### Screenshot
 #### desktop
-![desktop](./images/desktop-screenshot.png)
+![desktop](./images/desktop-full-screenshot.png)
 #### mobile
-![desktop](./images/mobile-screenshot.png)
+![mobile](./images/mobile-full-screenshot.png)
 ### Links
 
 - Solution URL: [frontend mentor](https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-scss-and-javascript-ViussYi5T)
