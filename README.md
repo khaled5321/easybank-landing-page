@@ -2,6 +2,8 @@
 
 This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+- Live Site URL: [github pages](https://khaled5321.github.io/easybank-landing-page/)
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -30,9 +32,7 @@ Users should be able to:
 #### mobile
 ![mobile](./images/mobile-full-screenshot.png)
 ### Links
-
 - Solution URL: [frontend mentor](https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-scss-and-javascript-ViussYi5T)
-- Live Site URL: [github pages](https://khaled5321.github.io/easybank-landing-page/)
 
 ## My process
 
